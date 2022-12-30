@@ -1,4 +1,4 @@
-var finances = [
+let finances = [
 ['Jan-2010', 867884],
 ['Feb-2010', 984655],
 ['Mar-2010', 322013],
@@ -88,14 +88,40 @@ var finances = [
 ];
 
 
-// Your task is to write JavaScript code that analyzes the records to calculate each of the following:
+
 
 // The total number of months included in the dataset.
-  // Count up how many things are in the array
-  // array.length
-  // Need a variable to store the value of array.length
+
+let totalNoofMonths = finances.length;
+
+for (let i = 1; i < finances.length; i++) {
+  const oneMonth = totalNoofMonths[1];
+  // total no. of months (Array length)
+  console.log("The number of months is " + finances.length);
+  
+}
+
 
 // The net total amount of Profit / Losses over the entire period.
+
+let totalProfits = finances[1];
+cashArray = [];
+
+
+for (let i = 1; i < finances.length; i++) {
+  const Profit = totalProfits[i]; 
+  
+  // points to 984655, profit for Jan 2010
+  console.log(totalProfits [1]) 
+  cashArray.push (finances[1]);
+  console.log (cashArray)
+}
+
+
+// console.log(finances[1])
+
+
+
   // Adding up the money
   // Keep a rolling total
   // Need a variable to store the rolling total
@@ -132,6 +158,6 @@ var finances = [
     // Look up how to limit the answer to two decimal points
 
 // Sample decrementing for loop
-for (let i = arr.length - 1; i < 0; i--) {
+// for (let i = arr.length - 1; i < 0; i--) {
   
-}
+// }
