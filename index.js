@@ -92,34 +92,29 @@ let finances = [
 
 // The total number of months included in the dataset.
 
-let totalNoofMonths = finances.length;
+
+let totalProfits = 0; 
+let cashChangesArray = [] 
 
 for (let i = 1; i < finances.length; i++) {
-  const oneMonth = totalNoofMonths[1];
-  // total no. of months (Array length)
-  console.log("The number of months is " + finances.length);
-  
-}
+  totalProfits= totalProfits + finances[i][1]
 
+  cashChangesArray.push(finances[i][1])
+  // total no. of months (Array length)
+  console.log("The total number of months is " + finances.length);
+  
+
+}
+// points to 984655, profit for Jan 2010
+  console.log(totalProfits );
+  console.log("The Avg is " + (totalProfits/finances.length).toFixed(2));
+  console.log (Math.max(...cashChangesArray));
 
 // The net total amount of Profit / Losses over the entire period.
 
-let totalProfits = finances[1];
-cashArray = [];
-
-
-for (let i = 1; i < finances.length; i++) {
-  const Profit = totalProfits[i]; 
-  
-  // points to 984655, profit for Jan 2010
-  console.log(totalProfits [1]) 
-  cashArray.push (finances[1]);
-  console.log (cashArray)
-}
 
 
 // console.log(finances[1])
-
 
 
   // Adding up the money
@@ -160,4 +155,4 @@ for (let i = 1; i < finances.length; i++) {
 // Sample decrementing for loop
 // for (let i = arr.length - 1; i < 0; i--) {
   
-// }
+//  }
