@@ -16,16 +16,14 @@ The total number of months included in the dataset.
 
 * The greatest decrease in losses (date and amount) over the entire period.
 
-When you open your code in the browser your resulting analysis should look similar to the following:
 
-  ```text
-  Financial Analysis
-  ----------------------------
-  Total Months: 25
-  Total: $2561231
-  Average  Change: $-2315.12
-  Greatest Increase in Profits: Feb-2012 ($1926159)
-  Greatest Decrease in Profits: Sep-2013 ($-2196167)
-  ```
+The final code should print the analysis to the console.
 
-Your final code should print the analysis to the console.
+
+Deployed application links
+
+Github link: https://github.com/AbbyIT/challenge-04
+Webpage -    https://abbyit.github.io/challenge-04/
+
+
+image.png

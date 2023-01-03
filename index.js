@@ -90,31 +90,47 @@ let finances = [
 
 
 
+
 // The total number of months included in the dataset.
 
-
 let totalProfits = 0; 
-let cashChangesArray = [] 
+let cashChangesArray = [];
+let changes= [];
+let totalChanges = 0;
 
-for (let i = 1; i < finances.length; i++) {
-  totalProfits= totalProfits + finances[i][1]
 
-  cashChangesArray.push(finances[i][1])
+  for (let i = 0; i < finances.length; i++) {
+  totalProfits= totalProfits + finances[i][1];
+
+  // cashArray holds the total amount of profit and loss over the whole period
+  cashChangesArray.push(finances[i][1]);
   // total no. of months (Array length)
+}
+
   console.log("The total number of months is " + finances.length);
   
+ // this shows the total profits for the whole period)
+  console.log( "The total profit for the years is " + totalProfits);
 
-}
-// points to 984655, profit for Jan 2010
-  console.log(totalProfits );
+  // changes over the  period
+  for (let i = 1; i < finances.length; i++) {
+  // changes= finances[i][1] - totalProfits[i-1][1];
+  // totalChanges.push(changes)
+  }
+
+
+  console.log("changes over the period is " +changes);
+
+  // total amount of profit is divided by the finance array lenght - 86 to obtain the Average
   console.log("The Avg is " + (totalProfits/finances.length).toFixed(2));
-  console.log (Math.max(...cashChangesArray));
+  
+  // The greatest increase in profits(date and amount) over the entire period.
+  console.log ("The greatest INCREASE in profit over the period is " + Math.max(...cashChangesArray));
 
-// The net total amount of Profit / Losses over the entire period.
+  // The greatest decrease in losses(date and amount) over the entire period.
+  console.log ("The greatest DECREASE in profit over the period is " +  Math.min(...cashChangesArray));
 
-
-
-// console.log(finances[1])
+ // The net total amount of Profit / Losses over the entire period.
 
 
   // Adding up the money
