@@ -114,15 +114,22 @@ let totalChanges = 0;
 
   // changes over the  period
   for (let i = 1; i < finances.length; i++) {
-  // changes= finances[i][1] - totalProfits[i-1][1];
-  // totalChanges.push(changes)
+   changes= finances[i][1] - finances[i-1][1];
+   
   }
-
-
+  
   console.log("changes over the period is " +changes);
+  
+  //  total changes over the period
+
+  for (let i = 1; i < changes.length; i++) {
+   
+  totalChanges+=changes[1];
+  }
+  console.log ("Total changes over the period is " + totalChanges)
 
   // total amount of profit is divided by the finance array lenght - 86 to obtain the Average
-  console.log("The Avg is " + (totalProfits/finances.length).toFixed(2));
+  console.log("The Avg is " + (changes/finances.length).toFixed(2));
   
   // The greatest increase in profits(date and amount) over the entire period.
   console.log ("The greatest INCREASE in profit over the period is " + Math.max(...cashChangesArray));
