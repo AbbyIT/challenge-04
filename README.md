@@ -1,4 +1,5 @@
-# challenge-04
+# Finacial record Project 
+
 This project involve creating  code for analyzing the financial records of a company. I have given a dataset composed of arrays with two fields, Date and Profit/Losses.
 
 The task for this project requires writing JavaScript code that analyzes the records to calculate each of the following:
@@ -18,6 +19,11 @@ The total number of months included in the dataset.
 
 
 The final code should print the analysis to the console.
+
+
+SCREENSHOTS
+
+![image](https://user-images.githubusercontent.com/117487886/222937387-7f5cea2c-2fba-45a2-a1fe-153868143a0e.png)
 
 
 Deployed application links
