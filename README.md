@@ -3,6 +3,7 @@ This project involve creating  code for analyzing the financial records of a com
 
 The task for this project requires writing JavaScript code that analyzes the records to calculate each of the following:
 
+Screenshots- included in readme 
 
 The total number of months included in the dataset.
 
