@@ -23,6 +23,11 @@ The total number of months included in the dataset.
 The final code should print the analysis to the console.
 
 
+SCREENSHOTS
+
+![image](https://user-images.githubusercontent.com/117487886/222937387-7f5cea2c-2fba-45a2-a1fe-153868143a0e.png)
+
+
 Deployed application links
 
 Github link: https://github.com/AbbyIT/challenge-04
